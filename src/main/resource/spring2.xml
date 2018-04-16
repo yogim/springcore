@@ -2,10 +2,13 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 
 
+
 <beans>
 
 	<bean id="Triangle" class="com.ymhase.springcore.model.Triangle2">
 		<property name="type" value="Equilateral" ></property>
 	</bean>
-	
+
+
+<bean class = "org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
 </beans>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="Triangle" class="com.ymhase.springcore.model.Triangle4">
+		<property name="pointA" ref="zeroPoint" />
+
+
+		<property name="pointB">
+			<bean id="onePoint" class="com.ymhase.springcore.model.Point">
+				<property name="X" value="10"></property>
+				<property name="Y" value="20"></property>
+			</bean>
+		</property>
+		
+		<property name="pointC">
+			<bean id="twoPoint" class="com.ymhase.springcore.model.Point">
+				<property name="X" value="30"></property>
+				<property name="Y" value="40"></property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="zeroPoint" class="com.ymhase.springcore.model.Point">
+		<property name="X" value="0"></property>
+		<property name="Y" value="0"></property>
+	</bean>
+
+</beans>

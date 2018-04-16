@@ -8,12 +8,14 @@ public class Triangle3 {
 
     private String type;
     private int height;
-    
-    public Triangle3(String type, int height) {
+    private int side;
+
+    public Triangle3(String type, int height, int side) {
 
 	this.type = type;
 	this.height = height;
-	
+	this.side = side;
+
     }
 
     public String getType() {
@@ -22,6 +24,14 @@ public class Triangle3 {
 
     public int getHeight() {
 	return height;
+    }
+
+    public int getSide() {
+	return side;
+    }
+
+    public void setSide(int side) {
+	this.side = side;
     }
 
     public void setType(String type) {
@@ -33,7 +43,8 @@ public class Triangle3 {
     }
 
     public void draw() {
-	System.out.println("Type of triangle is " + getType() + "and its height is " + getHeight());
+	System.out.println("Type of triangle is " + getType() + "and its height is " + getHeight()
+	+ "Side is"+getSide());
     }
 
 }
